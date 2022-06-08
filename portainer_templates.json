@@ -1224,7 +1224,7 @@
       "name": "vaultwarden",
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
       "platform": "linux",
-      "ports": [":80/tcp"],
+      "ports": [":80/tcp", "3012:3012/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Vaultwarden",
       "type": 1,
