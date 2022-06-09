@@ -1235,7 +1235,7 @@
           "name": "WEBSOCKET_ENABLED"
         },
         {
-            "label": "ADMIN PANEL TOKEN",
+            "label": "ADMIN_TOKEN",
             "name": "ADMIN_TOKEN"
         }],
       "volumes": [
