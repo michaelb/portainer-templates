@@ -1236,8 +1236,7 @@
         },
         {
             "label": "ADMIN PANEL TOKEN",
-            "name": "ADMIN_TOKEN",
-
+            "name": "ADMIN_TOKEN"
         }],
       "volumes": [
         {
