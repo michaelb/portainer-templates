@@ -431,6 +431,11 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ghost.png",
       "image": "ghost:latest",
       "ports": ["2368/tcp"],
+      "env": [
+        {
+          "name": "url",
+          "label": "Ghost domain url (http://....)",
+        },],
       "volumes": [
         {
           "container": "/var/lib/ghost/content"
