@@ -4465,6 +4465,34 @@
         }
       ]
     },
+
+
+    {
+      "categories": ["DashBoard"],
+      "description": "dashdot is a modern looking dashboard",
+      "image": "mauricenino/dashdot:latest",
+      "name": "dashdot",
+      "platform": "linux",
+      "ports": ["3001:3001/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Dashdot",
+      "type": 1,
+      "privileged": true,
+      "volumes": [
+        {
+          "bind": "/etc/os-release",
+          "container": "/etc/os-release",
+            "readonly": true
+        },
+        {
+          "bind": "/proc/1/ns/net",
+          "container": "/mnt/host_ns_net",
+            "readonly": true
+        }
+      ]
+    },
+
+
     {
       "categories": ["Messenger"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
