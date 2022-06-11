@@ -435,7 +435,8 @@
         {
           "name": "url",
           "label": "Ghost domain url (http://....)",
-        },],
+        }
+        ],
       "volumes": [
         {
           "container": "/var/lib/ghost/content"
