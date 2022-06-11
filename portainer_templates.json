@@ -434,7 +434,7 @@
       "env": [
         {
           "name": "url",
-          "label": "Ghost domain url (http://....)",
+          "label": "Ghost domain url (http://....)"
         }
         ],
       "volumes": [
