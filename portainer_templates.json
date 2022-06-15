@@ -242,6 +242,24 @@
         }
       ]
     },
+
+    {
+      "type": 1,
+      "title": "tor-relay",
+      "description": "A middle tor relay",
+      "categories": ["network"],
+      "platform": "linux",
+      "image": "jess/tor-relay:latest",
+      "ports": ["9001/tcp", "9001/tcp"],
+      "restart_policy": "always",
+      "volumes": [
+        {
+          "container": "/etc/localtime",
+	  "bind": "/etc/localtime"
+        }
+      ],
+      "command": "/etc/tor/torrc.middle"
+    },
     {
       "type": 1,
       "title": "Minio",
