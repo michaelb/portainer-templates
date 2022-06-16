@@ -249,16 +249,34 @@
       "description": "A middle tor relay",
       "categories": ["network"],
       "platform": "linux",
-      "image": "jess/tor-relay:latest",
-      "ports": ["9001/tcp", "9001/tcp"],
+      "image": "brunneis/tor-relay-arm:x86-64",
+      "ports": ["9001:9001/tcp","9030:9030/tcp"],
       "restart_policy": "always",
+      "env": [
+        {
+          "name": "BANDWIDTH_RATE",
+          "label": "Average bandwidth rate allocated, in kBytes/s"
+          "default": "800 KBytes",
+        },
+        {
+          "name": "NICKNAME",
+          "label": "relay name"
+          "default": "CestunebonnesituationcaTorRelay",
+        },
+        {
+
+          "name": "BANDWIDTH_BURST",
+          "label": "Max bandwidth rate allocated, in kBytes/s"
+          "default": "999 KBytes",
+        }
+      ],
       "volumes": [
         {
           "container": "/etc/localtime",
 	  "bind": "/etc/localtime"
         }
       ],
-      "command": "/etc/tor/torrc.middle"
+      "command": "./update-relay.sh ; ./launch-relay.sh brunneis/tor-relay:x86-64 middle"
     },
     {
       "type": 1,
