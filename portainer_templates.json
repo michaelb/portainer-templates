@@ -255,19 +255,19 @@
       "env": [
         {
           "name": "BANDWIDTH_RATE",
-          "label": "Average bandwidth rate allocated, in kBytes/s"
-          "default": "800 KBytes",
+          "label": "Average bandwidth rate allocated, in kBytes/s",
+          "default": "800 KBytes"
         },
         {
           "name": "NICKNAME",
-          "label": "relay name"
-          "default": "CestunebonnesituationcaTorRelay",
+          "label": "relay name",
+          "default": "CestunebonnesituationcaTorRelay"
         },
         {
 
           "name": "BANDWIDTH_BURST",
-          "label": "Max bandwidth rate allocated, in kBytes/s"
-          "default": "999 KBytes",
+          "label": "Max bandwidth rate allocated, in kBytes/s",
+          "default": "999 KBytes"
         }
       ],
       "volumes": [
