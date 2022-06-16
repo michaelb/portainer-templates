@@ -276,7 +276,7 @@
 	  "bind": "/etc/localtime"
         }
       ],
-      "command": "./update-relay.sh ; ./launch-relay.sh brunneis/tor-relay:x86-64 middle"
+      "command": "./launch-relay.sh brunneis/tor-relay:x86-64 middle"
     },
     {
       "type": 1,
