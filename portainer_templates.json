@@ -40,7 +40,7 @@
       "description": "Interactive whiteboard",
       "categories": ["Tools:"],
       "platform": "linux",
-      "image": "excalidraw/excalidraw:latest",
+      "image": "excalidraw/excalidraw:latest"
     },
     {
       "type": 1,
