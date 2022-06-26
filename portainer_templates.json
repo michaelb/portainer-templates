@@ -4534,6 +4534,26 @@
       ]
     },
 
+    {
+      "type": 1,
+      "title": "IPFS",
+      "description": "Interplanetary file system node",
+      "categories": ["Tools"],
+      "platform": "linux",
+      "ports": ["4001:4001/tcp", "4001:4001/udp", "8080:8080/tcp", "5001:5001/tcp"],
+      "image": "ipfs/go-ipfs:latest",
+            "volumes": [
+            {
+              "bind": "/ipfs/staging",
+          "container": "/export"
+        },
+        {
+          "bind": "/ipfs/data",
+          "container": "/data/ipfs"
+        }
+      ]
+
+    },
 
     {
       "categories": ["DashBoard"],
