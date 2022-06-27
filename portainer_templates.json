@@ -36,6 +36,23 @@
     },
     {
       "type": 1,
+      "title": "Dashy",
+      "title": "dashy",
+      "description": "a dashboard & homepage",
+      "categories": ["Tools:"],
+      "platform": "linux",
+      "restart_policy": "always",
+      "ports": ["4000:80/tcp"],
+      "image": "lissy93/dashy:latest",
+      "volumes": [
+        {
+          "container": "/app/public/conf.yml",
+          "bind": "/home/michael/homelab/dashy.conf"
+        }
+      ]
+    },
+    {
+      "type": 1,
       "title": "Excalidraw",
       "description": "Interactive whiteboard",
       "categories": ["Tools:"],
